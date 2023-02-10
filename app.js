@@ -7,6 +7,11 @@ const section =document.querySelector('section');
 section.style.backgroundColor = '';
 section.className = 'red-bg';
 
+const div = document.querySelector('div');
+div.innerHTML = 'This is the div';
+
+div.insertAdjacentHTML('beforeend', '<p> this is the new insertAdjacentHTML stuff');
+
 const button = document.querySelector('button');
 
 button.addEventListener('click', () => {
